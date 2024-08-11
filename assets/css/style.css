@@ -88,6 +88,17 @@ header nav a:hover{
   color: #000;
 }
 
+.caption{
+  display: flex;
+}
+.profile-pic-container{
+  width: 450px;
+  margin-top: 70px;
+}
+.profile-pic-container img{
+  width: 100%;
+  border-radius: 50%;
+}
 header nav button{
   background: rgba(255, 255, 255, 0.1) !important;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -564,11 +575,17 @@ small {
       width: 70px;
       height: 70px;
   }
+  .profile-pic-container{
+    width: 90px !important;
+  }
 
 }
 @media screen and (max-width: 1339px){
   .homeLoad{
     display: none;
+  }
+  .profile-pic-container{
+    width: 550px;
   }
   .homeLoad img{
     display: none;
@@ -607,6 +624,7 @@ small {
     font-size: 2.8rem !important;
     font-weight: 400;
   }
+ 
 }
 
 @media (max-width: 1360px) {
@@ -678,6 +696,14 @@ small {
   }
   #intro.section .container *:not(span) {
     padding: 0;
+  }
+  .profile-pic-container{
+    position: absolute !important;
+    /* top: -40px !important; */
+    right: 0;
+    top: -40px;
+    width: 140px;
+    margin-top: 0px !important;
   }
   .readme,
   .contactme {
